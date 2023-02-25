@@ -1,0 +1,10 @@
+21:18:19.689 [main] INFO  c.a.e.controller.EmailController - DELETE Request to delete email with id 1
+21:18:19.810 [main] INFO  c.a.e.controller.EmailController - PUT Request to update email with id 1
+21:18:19.848 [main] INFO  c.a.e.controller.EmailController - GET Request to find email with address example@gmail.com
+21:18:19.872 [main] INFO  c.a.e.controller.EmailController - GET Request to find email with id 999
+21:18:19.928 [main] INFO  c.a.e.controller.EmailController - POST Request to save email com.api.emailsenderapi.model.Email@26aee0a6
+21:30:11.526 [main] INFO  c.a.e.controller.EmailController - DELETE Request to delete email with id 1
+21:30:11.671 [main] INFO  c.a.e.controller.EmailController - PUT Request to update email with id 1
+21:30:11.708 [main] INFO  c.a.e.controller.EmailController - GET Request to find email with address example@gmail.com
+21:30:11.727 [main] INFO  c.a.e.controller.EmailController - GET Request to find email with id 999
+21:30:11.785 [main] INFO  c.a.e.controller.EmailController - POST Request to save email com.api.emailsenderapi.model.Email@26aee0a6

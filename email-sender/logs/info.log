@@ -1,0 +1,42 @@
+21:18:15.539 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.api.emailsenderapi.EmailControllerIntegrationTest]: EmailControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+21:18:15.717 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.api.emailsenderapi.EmailSenderApiApplication for test class com.api.emailsenderapi.EmailControllerIntegrationTest
+21:18:16.785 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+21:18:16.838 [main] INFO  c.a.e.EmailControllerIntegrationTest - Starting EmailControllerIntegrationTest using Java 19.0.2 with PID 10204 (started by Maciek in C:\Users\Maciek\IdeaProjects\email-sender\EmailSender)
+21:18:16.840 [main] INFO  c.a.e.EmailControllerIntegrationTest - The following 1 profile is active: "dev"
+21:18:16.871 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8071
+21:18:16.872 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Connect Timeout Exception on Url - http://localhost:8071. Will try the next url if available
+21:18:16.872 [main] WARN  o.s.c.c.c.ConfigServerConfigDataLoader - Could not locate PropertySource ([ConfigServerConfigDataResource@2cc04358 uris = array<String>['http://localhost:8071'], optional = true, profiles = list['dev']]): I/O error on GET request for "http://localhost:8071/emailsender/dev": Connection refused: no further information
+21:18:19.550 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+21:18:19.551 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+21:18:19.556 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 2 ms
+21:18:19.581 [main] INFO  c.a.e.EmailControllerIntegrationTest - Started EmailControllerIntegrationTest in 3.735 seconds (process running for 5.37)
+21:18:19.689 [main] INFO  c.a.e.controller.EmailController - DELETE Request to delete email with id 1
+21:18:19.810 [main] INFO  c.a.e.controller.EmailController - PUT Request to update email with id 1
+21:18:19.848 [main] INFO  c.a.e.controller.EmailController - GET Request to find email with address example@gmail.com
+21:18:19.872 [main] INFO  c.a.e.controller.EmailController - GET Request to find email with id 999
+21:18:19.928 [main] INFO  c.a.e.controller.EmailController - POST Request to save email com.api.emailsenderapi.model.Email@26aee0a6
+21:18:20.226 [main] INFO  c.a.e.service.EmailService - message Mock for Message, hashCode: 1952551539 sent to test1@example.com
+21:18:20.227 [main] INFO  c.a.e.service.EmailService - message Mock for Message, hashCode: 1952551539 sent to test2@example.com
+21:18:20.236 [main] WARN  c.a.e.service.EmailService - Error thrown in saveEmail method
+21:18:20.246 [main] WARN  c.a.e.service.EmailService - Error thrown in deleteById method
+21:30:07.668 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.api.emailsenderapi.EmailControllerIntegrationTest]: EmailControllerIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+21:30:07.821 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.api.emailsenderapi.EmailSenderApiApplication for test class com.api.emailsenderapi.EmailControllerIntegrationTest
+21:30:08.856 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.0.Final
+21:30:08.906 [main] INFO  c.a.e.EmailControllerIntegrationTest - Starting EmailControllerIntegrationTest using Java 19.0.2 with PID 7104 (started by Maciek in C:\Users\Maciek\IdeaProjects\email-sender)
+21:30:08.908 [main] INFO  c.a.e.EmailControllerIntegrationTest - The following 1 profile is active: "dev"
+21:30:08.938 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8071
+21:30:08.938 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Connect Timeout Exception on Url - http://localhost:8071. Will try the next url if available
+21:30:08.938 [main] WARN  o.s.c.c.c.ConfigServerConfigDataLoader - Could not locate PropertySource ([ConfigServerConfigDataResource@2cc04358 uris = array<String>['http://localhost:8071'], optional = true, profiles = list['dev']]): I/O error on GET request for "http://localhost:8071/emailsender/dev": Connection refused: no further information
+21:30:11.398 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+21:30:11.399 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+21:30:11.403 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+21:30:11.427 [main] INFO  c.a.e.EmailControllerIntegrationTest - Started EmailControllerIntegrationTest in 3.494 seconds (process running for 4.857)
+21:30:11.526 [main] INFO  c.a.e.controller.EmailController - DELETE Request to delete email with id 1
+21:30:11.671 [main] INFO  c.a.e.controller.EmailController - PUT Request to update email with id 1
+21:30:11.708 [main] INFO  c.a.e.controller.EmailController - GET Request to find email with address example@gmail.com
+21:30:11.727 [main] INFO  c.a.e.controller.EmailController - GET Request to find email with id 999
+21:30:11.785 [main] INFO  c.a.e.controller.EmailController - POST Request to save email com.api.emailsenderapi.model.Email@26aee0a6
+21:30:12.048 [main] INFO  c.a.e.service.EmailService - message Mock for Message, hashCode: 1952551539 sent to test1@example.com
+21:30:12.049 [main] INFO  c.a.e.service.EmailService - message Mock for Message, hashCode: 1952551539 sent to test2@example.com
+21:30:12.057 [main] WARN  c.a.e.service.EmailService - Error thrown in saveEmail method
+21:30:12.069 [main] WARN  c.a.e.service.EmailService - Error thrown in deleteById method

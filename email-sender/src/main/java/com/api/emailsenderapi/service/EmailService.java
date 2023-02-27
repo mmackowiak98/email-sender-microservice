@@ -55,23 +55,12 @@ public class EmailService {
     }
 
     public boolean sendEmails(EmailContent emailContent) {
-
-        for (Email email : getAllEmails()) {
-            Message message = messageCreator.createMessage();
-            try {
-                message.addRecipient(Message.RecipientType.TO, new InternetAddress(email.getEmailAddress()));
-                message.setSubject(emailContent.getSubject());
-                message.setContent(emailContent.getContent(), "text/plain");
-                transportDelegator.send(message);
-                log.info("message {} sent to {}", message, email.getEmailAddress());
-            } catch (MessagingException e) {
-                logger.warn("Error thrown in sendEmails method");
-                throw new GlobalEmailException(e.getMessage(), HttpStatus.BAD_REQUEST);
-            }
+        List<Email> allEmails = getAllEmails();
+        for (Email recipient : allEmails) {
+            sendEmailToRecipient(recipient.getEmailAddress(), emailContent);
         }
         return true;
     }
-
 
 
     public EmailDTO updateEmail(Long id, String email) {
@@ -93,6 +82,19 @@ public class EmailService {
 
     private List<Email> getAllEmails() {
         return emailRepository.findAll();
+    }
+    private void sendEmailToRecipient(String recipientAddress, EmailContent emailContent) {
+        Message message = messageCreator.createMessage();
+        try {
+            message.addRecipient(Message.RecipientType.TO, new InternetAddress(recipientAddress));
+            message.setSubject(emailContent.getSubject());
+            message.setContent(emailContent.getContent(), "text/plain");
+            transportDelegator.send(message);
+            log.info("message {} sent to {}", message, recipientAddress);
+        } catch (MessagingException e) {
+            logger.warn("Error thrown in sendEmails method");
+            throw new GlobalEmailException(e.getMessage(), HttpStatus.BAD_REQUEST);
+        }
     }
 
 
